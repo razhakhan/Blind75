@@ -8,7 +8,8 @@ class Solution:
                 pivot = right_pointer-1
                 break
             right_pointer-=1
-            
+
+        # to pass the case like [2, 3, 1] we need pivot as -1
         if pivot==-1:
             arr[:]=arr[::-1]
             return arr
